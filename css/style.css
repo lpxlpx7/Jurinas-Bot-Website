@@ -1404,6 +1404,28 @@ img {
   margin-top: 34px;
 }
 
+.error-shell .error-source {
+  margin-top: 28px;
+  font-size: 14px;
+}
+
+.error-source a {
+  color: var(--blue);
+  font-weight: 650;
+}
+
+html[lang="zh-CN"] body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+}
+
+html[lang="zh-CN"] .bot-hero h1,
+html[lang="zh-CN"] .bot-section-heading h2,
+html[lang="zh-CN"] .access-card h2,
+html[lang="zh-CN"] .disclaimer-card h2 {
+  letter-spacing: -0.045em;
+  line-height: 1.12;
+}
+
 html[lang="ja"] body {
   font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI", "Yu Gothic", Meiryo, sans-serif;
 }

@@ -26,9 +26,11 @@ languageButtons.forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.languageButton));
 });
 
-const preferredLanguage = localStorage.getItem("jurina-bot-language");
-if (preferredLanguage === "ja" || preferredLanguage === "en") {
-  setLanguage(preferredLanguage);
+if (languageButtons.length) {
+  const preferredLanguage = localStorage.getItem("jurina-bot-language");
+  if (preferredLanguage === "ja" || preferredLanguage === "en") {
+    setLanguage(preferredLanguage);
+  }
 }
 
 window.addEventListener(

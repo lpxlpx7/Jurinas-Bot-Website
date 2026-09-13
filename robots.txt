@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lpxlpx7.github.io/Jurinas-Bot-Website/sitemap.xml
+Sitemap: https://bot.lpxlpx7.top/sitemap.xml

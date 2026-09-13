@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jurina's Bot 是一个面向飞行模拟社区的私有 Discord 工具，提供 VATSIM 成员资料、航空天气、Digital ATIS 和日本运行参考信息。">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jurina's Bot | 中文介绍">
+  <meta property="og:description" content="面向飞行模拟社区的私有 Discord 工具。">
+  <meta property="og:url" content="https://bot.lpxlpx7.top/cn/">
+  <meta property="og:image" content="https://bot.lpxlpx7.top/assets/og-card.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jurina's Bot | 中文介绍">
+  <meta name="twitter:description" content="面向飞行模拟社区的私有 Discord 工具。">
+  <meta name="twitter:image" content="https://bot.lpxlpx7.top/assets/og-card.svg">
+  <title>Jurina's Bot | 中文介绍</title>
+  <link rel="canonical" href="https://bot.lpxlpx7.top/cn/">
+  <link rel="alternate" hreflang="en" href="https://bot.lpxlpx7.top/">
+  <link rel="icon" href="../img/1.png" type="image/png">
+  <link rel="apple-touch-icon" href="../img/1.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body class="bot-page">
+  <header class="site-header">
+    <nav class="nav shell" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="Jurina's Bot 首页">
+        <img class="brand-icon" src="../img/1.png" alt="" width="34" height="34">
+        <span>Jurina's Bot</span>
+      </a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#features">功能</a>
+          <a href="#commands">命令</a>
+          <a href="#access">使用申请</a>
+          <a href="#contact">联系</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="bot-hero shell">
+      <div class="bot-hero-copy reveal">
+        <p class="eyebrow">私有 DISCORD 工具</p>
+        <h1>
+          <span>清晰的航空数据，</span>
+          <strong>尽在 Discord 之中。</strong>
+        </h1>
+        <p class="hero-lead">Jurina's Bot 将实用的 VATSIM 成员信息、航空天气、Digital ATIS 和日本运行参考资料整合到简洁的 Discord 命令界面中。</p>
+        <div class="actions">
+          <a class="button button-primary" href="#commands">查看命令</a>
+          <a class="button button-secondary" href="#access">申请使用</a>
+        </div>
+        <p class="availability-note">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>仅可在获准的 Discord 服务器中使用</span>
+        </p>
+      </div>
+
+      <div class="command-window reveal" aria-label="Jurina's Bot 命令回复示例">
+        <div class="window-bar">
+          <span></span><span></span><span></span>
+          <p>Jurina's Bot</p>
+        </div>
+        <div class="window-body">
+          <p class="slash-command">/vstats <span>cid:0000000</span></p>
+          <div class="response-card response-blue">
+            <p class="response-label">VATSIM 成员信息</p>
+            <h2>XXX XXX</h2>
+            <div class="response-grid">
+              <span>CID <b>0000000</b></span>
+              <span>等级 <b>XXX</b></span>
+              <span>分部 <b>XXX</b></span>
+            </div>
+          </div>
+          <div class="response-card response-gold">
+            <p class="response-label">VATUSA 资料</p>
+            <div class="response-grid">
+              <span>管制单位 <b>XXX</b></span>
+              <span>成员 <b>XXX</b></span>
+              <span>职务 <b>XXX</b></span>
+            </div>
+          </div>
+          <p class="source-line">数据来源：VATSIM API 和 VATUSA API。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bot-section shell" id="features">
+      <div class="bot-section-heading reveal">
+        <p class="eyebrow">为飞行模拟而打造</p>
+        <h2>无需离开服务器，即可获取所需信息。</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card feature-wide reveal">
+          <p class="feature-number">01</p>
+          <h3>成员资料</h3>
+          <p>通过 CID 查询公开的 VATSIM 和 VATUSA 成员信息。公开姓名、等级、管制单位、职务和访问管制单位等资料都会清晰标注数据来源。</p>
+          <div class="feature-orbit" aria-hidden="true"><span>V</span></div>
+        </article>
+        <article class="feature-card reveal">
+          <p class="feature-number">02</p>
+          <h3>天气与 ATIS</h3>
+          <p>使用四字母 ICAO 机场代码获取最新 METAR、TAF 和可用的 FAA Digital ATIS。</p>
+        </article>
+        <article class="feature-card feature-dark reveal">
+          <p class="feature-number">03</p>
+          <h3>日本运行信息</h3>
+          <p>查询羽田机场跑道运行配置和时段，以及特定航路定位点对应的进离场移交信息。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="bot-section commands-section" id="commands">
+      <div class="shell">
+        <div class="bot-section-heading reveal">
+          <p class="eyebrow">使用方法</p>
+          <h2>输入斜杠命令，获得准确答案。</h2>
+          <p>在获准的 Discord 服务器中输入命令，填写必需选项并发送。结果将以清晰易读的消息和嵌入内容返回。</p>
+        </div>
+        <div class="command-list reveal">
+          <article class="command-item"><code>/vstats cid:&lt;CID&gt;</code><p>显示公开的 VATSIM 和 VATUSA 成员信息。</p></article>
+          <article class="command-item"><code>/metar icao:&lt;ICAO&gt;</code><p>获取机场最新的 METAR。</p></article>
+          <article class="command-item"><code>/taf icao:&lt;ICAO&gt;</code><p>获取机场最新的 TAF。</p></article>
+          <article class="command-item"><code>/datis icao:&lt;ICAO&gt;</code><p>显示可用的 FAA Digital ATIS。</p></article>
+          <article class="command-item"><code>/hndconfig</code><p>显示当前羽田机场官方跑道运行配置。</p></article>
+          <article class="command-item"><code>/hndschedule</code><p>按日本时间显示当前羽田机场运行时段。</p></article>
+          <article class="command-item"><code>/arrtransalt icao:&lt;ICAO&gt; fix:&lt;FIX&gt;</code><p>查询航路定位点对应的进场和进近移交信息。</p></article>
+          <article class="command-item"><code>/deptransalt icao:&lt;ICAO&gt; fix:&lt;FIX&gt;</code><p>查询航路定位点对应的离场和爬升移交信息。</p></article>
+          <article class="command-item"><code>/jpnroute</code><p>直接从 Discord 打开 JPN Route 网站。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bot-section shell" id="access">
+      <div class="access-card reveal">
+        <div>
+          <p class="eyebrow">私有访问</p>
+          <h2>经审核批准后使用，不提供公开邀请。</h2>
+        </div>
+        <div class="access-copy">
+          <p>Jurina's Bot 仅供获准的 Discord 服务器使用。如需申请，请通过电子邮件说明服务器名称、用途、计划使用的功能和大致成员人数。</p>
+          <p>是否批准由管理员自行决定。如果发现滥用、自动化、大量收集数据，或违反 Discord 及数据提供方政策的行为，使用许可可能会被撤销。</p>
+          <a class="contact-link" href="mailto:lpx2261982328@outlook.com?subject=Jurina%27s%20Bot%20Access%20Request">
+            <span>通过电子邮件申请使用</span>
+            <strong>lpx2261982328@outlook.com</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bot-section shell policy-section" id="policy">
+      <div class="bot-section-heading reveal">
+        <p class="eyebrow">负责任地使用</p>
+        <h2>请谨慎、正确地使用数据。</h2>
+      </div>
+      <div class="policy-grid">
+        <article class="policy-card reveal">
+          <h3>禁止抓取或滥用</h3>
+          <p>请勿刷屏发送命令、自动执行查询、枚举 CID、建立永久数据档案，或利用返回的信息骚扰、追踪或冒充他人。</p>
+        </article>
+        <article class="policy-card reveal">
+          <h3>遵守提供方政策</h3>
+          <p>使用本 Bot 时必须遵守 Discord 规则，以及 VATSIM、VATUSA、aviationweather.gov、atis.info 和其他已注明数据提供方的适用政策。</p>
+        </article>
+        <article class="policy-card reveal">
+          <h3>仅限模拟用途</h3>
+          <p>所有航空、天气、ATIS、跑道、时段和移交信息仅供飞行模拟及社区参考。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="bot-section shell disclaimer-section" id="contact">
+      <div class="disclaimer-card reveal">
+        <div>
+          <p class="eyebrow">联系与免责声明</p>
+          <h2>重要信息。</h2>
+        </div>
+        <div class="legal-copy">
+          <p>Jurina's Bot 是独立社区项目，与 Discord、VATSIM、VATUSA、FAA、atis.info、aviationweather.gov 或任何其他提及的组织不存在隶属、赞助、批准或背书关系。</p>
+          <p>数据可能延迟、不完整、不准确、发生变化或无法使用，且不提供任何保证。严禁将本 Bot 用于真实世界的导航、飞行计划、空中交通管制、运行决策或任何安全关键用途。</p>
+          <p>如需申请使用、反馈隐私问题、更正信息或咨询其他事项，请联系 <a href="mailto:lpx2261982328@outlook.com">lpx2261982328@outlook.com</a>。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-bottom bot-footer">
+      <p>&copy; <span id="copyright-year">2026</span> Jurina。保留所有权利。</p>
+      <p>本网站已在 <a href="https://github.com/lpxlpx7/Jurinas-Bot-Website" target="_blank" rel="noopener noreferrer">GitHub</a> 上开源。</p>
+    </div>
+  </footer>
+</body>
+</html>
