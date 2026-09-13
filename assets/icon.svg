@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Jurina's Bot</title>
+  <defs>
+    <linearGradient id="background" x1="80" y1="56" x2="432" y2="456" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1688ff"/>
+      <stop offset="1" stop-color="#0055bd"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="124" fill="url(#background)"/>
+  <path d="M346 121v210c0 50-34 82-86 82-47 0-81-28-81-71 0-41 31-70 76-70 18 0 34 4 47 12V121h44Zm-91 195c-19 0-32 10-32 26 0 17 13 27 34 27 28 0 45-15 45-40v-4c-12-6-28-9-47-9Z" fill="#fff"/>
+</svg>

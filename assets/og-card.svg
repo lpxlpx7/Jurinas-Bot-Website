@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Jurina's Bot</title>
+  <desc id="description">A private Discord utility for flight simulation communities.</desc>
+  <defs>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1000 70) rotate(136) scale(720 530)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b9dcff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </radialGradient>
+    <linearGradient id="mark" x1="770" y1="150" x2="1040" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1688ff"/>
+      <stop offset="1" stop-color="#0055bd"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <text x="84" y="132" fill="#0071e3" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="3">PRIVATE DISCORD UTILITY</text>
+  <text x="80" y="270" fill="#1d1d1f" font-family="Arial, sans-serif" font-size="92" font-weight="700">Jurina's Bot</text>
+  <text x="84" y="350" fill="#6e6e73" font-family="Arial, sans-serif" font-size="36">Aviation data, right inside Discord.</text>
+  <text x="84" y="430" fill="#6e6e73" font-family="Arial, sans-serif" font-size="24">English / 日本語</text>
+  <rect x="838" y="158" width="272" height="272" rx="70" fill="url(#mark)"/>
+  <path d="M1023 222v132c0 31-21 51-54 51-29 0-50-18-50-44 0-26 19-44 47-44 11 0 21 3 29 8V222h28Zm-57 122c-12 0-20 6-20 17 0 10 8 17 21 17 18 0 28-10 28-25v-3c-7-4-17-6-29-6Z" fill="#fff"/>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "name": "Jurina's Bot",
+  "short_name": "Jurina's Bot",
+  "description": "A private Discord utility for flight simulation communities.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
