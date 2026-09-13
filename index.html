@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en" data-language="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jurina's Bot is a private Discord utility for VATSIM member data, aviation weather, Digital ATIS, and Japan-focused operational references.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Jurina's Bot</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body class="bot-page">
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Jurina's Bot home">Jurina's Bot</a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#features" data-en="Features" data-ja="機能">Features</a>
+          <a href="#commands" data-en="Commands" data-ja="コマンド">Commands</a>
+          <a href="#access" data-en="Access" data-ja="利用申請">Access</a>
+          <a href="#contact" data-en="Contact" data-ja="お問い合わせ">Contact</a>
+        </div>
+        <div class="language-switch" aria-label="Language selection">
+          <button class="language-button is-active" type="button" data-language-button="en" aria-pressed="true">EN</button>
+          <button class="language-button" type="button" data-language-button="ja" aria-pressed="false">日本語</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="bot-hero shell">
+      <div class="bot-hero-copy reveal">
+        <p class="eyebrow" data-en="PRIVATE DISCORD UTILITY" data-ja="プライベート DISCORD ユーティリティ">PRIVATE DISCORD UTILITY</p>
+        <h1>
+          <span data-en="Clear aviation data," data-ja="航空情報を、">Clear aviation data,</span>
+          <strong data-en="right inside Discord." data-ja="Discordでもっと身近に。">right inside Discord.</strong>
+        </h1>
+        <p class="hero-lead" data-en="Jurina's Bot brings useful VATSIM member information, aviation weather, Digital ATIS, and Japan-focused operational references into one simple command interface." data-ja="Jurina's Botは、VATSIMメンバー情報、航空気象、Digital ATIS、日本の運用資料を、シンプルなDiscordコマンドで確認できるプライベートBotです。">
+          Jurina's Bot brings useful VATSIM member information, aviation weather, Digital ATIS, and Japan-focused operational references into one simple command interface.
+        </p>
+        <div class="actions">
+          <a class="button button-primary" href="#commands" data-en="Explore commands" data-ja="コマンドを見る">Explore commands</a>
+          <a class="button button-secondary" href="#access" data-en="Request access" data-ja="利用を申請する">Request access</a>
+        </div>
+        <p class="availability-note">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span data-en="Available only in approved Discord servers" data-ja="承認されたDiscordサーバー内でのみ利用可能">Available only in approved Discord servers</span>
+        </p>
+      </div>
+
+      <div class="command-window reveal" aria-label="Example Jurina's Bot command response">
+        <div class="window-bar">
+          <span></span><span></span><span></span>
+          <p>Jurina's Bot</p>
+        </div>
+        <div class="window-body">
+          <p class="slash-command">/vstats <span>cid:1718975</span></p>
+          <div class="response-card response-blue">
+            <p class="response-label" data-en="VATSIM MEMBERSHIP" data-ja="VATSIM メンバー情報">VATSIM MEMBERSHIP</p>
+            <h2>Member Name</h2>
+            <div class="response-grid">
+              <span>CID <b>1718975</b></span>
+              <span>Rating <b>I1</b></span>
+              <span>Division <b>USA</b></span>
+            </div>
+          </div>
+          <div class="response-card response-gold">
+            <p class="response-label">VATUSA PROFILE</p>
+            <div class="response-grid">
+              <span>Facility <b>ZME</b></span>
+              <span>Member <b>Home</b></span>
+              <span>Roles <b>Public</b></span>
+            </div>
+          </div>
+          <p class="source-line">Data sources: VATSIM API and VATUSA API.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bot-section shell" id="features">
+      <div class="bot-section-heading reveal">
+        <p class="eyebrow" data-en="BUILT FOR SIMULATION" data-ja="フライトシミュレーションのために">BUILT FOR SIMULATION</p>
+        <h2 data-en="The information you need, without leaving your server." data-ja="必要な情報を、サーバーから離れずに。">The information you need, without leaving your server.</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card feature-wide reveal">
+          <p class="feature-number">01</p>
+          <h3 data-en="Member profiles" data-ja="メンバープロフィール">Member profiles</h3>
+          <p data-en="Look up public VATSIM and VATUSA membership details by CID. Public names, ratings, facilities, roles, and visiting facilities are presented with clear source attribution." data-ja="CIDからVATSIMおよびVATUSAの公開メンバー情報を検索できます。公開氏名、レーティング、所属施設、役職、訪問施設を、情報源の表示とともに確認できます。">
+            Look up public VATSIM and VATUSA membership details by CID. Public names, ratings, facilities, roles, and visiting facilities are presented with clear source attribution.
+          </p>
+          <div class="feature-orbit" aria-hidden="true"><span>V</span></div>
+        </article>
+        <article class="feature-card reveal">
+          <p class="feature-number">02</p>
+          <h3 data-en="Weather & ATIS" data-ja="気象・ATIS">Weather &amp; ATIS</h3>
+          <p data-en="Retrieve current METAR, TAF, and available FAA Digital ATIS using a four-letter ICAO airport code." data-ja="4文字のICAO空港コードから、最新のMETAR、TAF、利用可能なFAA Digital ATISを取得できます。">
+            Retrieve current METAR, TAF, and available FAA Digital ATIS using a four-letter ICAO airport code.
+          </p>
+        </article>
+        <article class="feature-card feature-dark reveal">
+          <p class="feature-number">03</p>
+          <h3 data-en="Japan operations" data-ja="日本の運用情報">Japan operations</h3>
+          <p data-en="Check Haneda runway configurations and schedules, plus route-specific arrival and departure transfer information." data-ja="羽田空港の滑走路運用・時間帯に加え、経路FIX別の到着・出発移管情報を確認できます。">
+            Check Haneda runway configurations and schedules, plus route-specific arrival and departure transfer information.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="bot-section commands-section" id="commands">
+      <div class="shell">
+        <div class="bot-section-heading reveal">
+          <p class="eyebrow" data-en="HOW TO USE" data-ja="使い方">HOW TO USE</p>
+          <h2 data-en="Type a slash. Get a focused answer." data-ja="スラッシュコマンドで、必要な答えを。">Type a slash. Get a focused answer.</h2>
+          <p data-en="Start typing a command in an approved Discord server, complete the required options, and submit it. Results are returned as readable messages and embeds." data-ja="承認されたDiscordサーバーでコマンドを入力し、必要な項目を指定して送信してください。結果は読みやすいメッセージとEmbedで表示されます。">
+            Start typing a command in an approved Discord server, complete the required options, and submit it. Results are returned as readable messages and embeds.
+          </p>
+        </div>
+
+        <div class="command-list reveal">
+          <article class="command-item">
+            <code>/vstats cid:&lt;CID&gt;</code>
+            <p data-en="Display public VATSIM and VATUSA member information." data-ja="VATSIM・VATUSAの公開メンバー情報を表示します。">Display public VATSIM and VATUSA member information.</p>
+          </article>
+          <article class="command-item">
+            <code>/metar icao:&lt;ICAO&gt;</code>
+            <p data-en="Retrieve the latest airport METAR." data-ja="空港の最新METARを取得します。">Retrieve the latest airport METAR.</p>
+          </article>
+          <article class="command-item">
+            <code>/taf icao:&lt;ICAO&gt;</code>
+            <p data-en="Retrieve the latest airport TAF." data-ja="空港の最新TAFを取得します。">Retrieve the latest airport TAF.</p>
+          </article>
+          <article class="command-item">
+            <code>/datis icao:&lt;ICAO&gt;</code>
+            <p data-en="Display available FAA Digital ATIS." data-ja="利用可能なFAA Digital ATISを表示します。">Display available FAA Digital ATIS.</p>
+          </article>
+          <article class="command-item">
+            <code>/hndconfig</code>
+            <p data-en="Show the current official Haneda runway configuration." data-ja="現在の羽田空港公式滑走路運用を表示します。">Show the current official Haneda runway configuration.</p>
+          </article>
+          <article class="command-item">
+            <code>/hndschedule</code>
+            <p data-en="Show the current Haneda operating period in Japan time." data-ja="日本時間に基づく現在の羽田運用時間帯を表示します。">Show the current Haneda operating period in Japan time.</p>
+          </article>
+          <article class="command-item">
+            <code>/arrtransalt icao:&lt;ICAO&gt; fix:&lt;FIX&gt;</code>
+            <p data-en="Find arrival and approach transfer information for a route FIX." data-ja="経路FIXに対応する到着・進入移管情報を検索します。">Find arrival and approach transfer information for a route FIX.</p>
+          </article>
+          <article class="command-item">
+            <code>/deptransalt icao:&lt;ICAO&gt; fix:&lt;FIX&gt;</code>
+            <p data-en="Find departure and climb transfer information for a route FIX." data-ja="経路FIXに対応する出発・上昇移管情報を検索します。">Find departure and climb transfer information for a route FIX.</p>
+          </article>
+          <article class="command-item">
+            <code>/jpnroute</code>
+            <p data-en="Open the JPN Route website directly from Discord." data-ja="DiscordからJPN Routeウェブサイトを開きます。">Open the JPN Route website directly from Discord.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bot-section shell" id="access">
+      <div class="access-card reveal">
+        <div>
+          <p class="eyebrow" data-en="PRIVATE ACCESS" data-ja="プライベート利用">PRIVATE ACCESS</p>
+          <h2 data-en="Available by approval, not by public invitation." data-ja="一般公開ではなく、承認制で提供しています。">Available by approval, not by public invitation.</h2>
+        </div>
+        <div class="access-copy">
+          <p data-en="Jurina's Bot is intended only for approved Discord servers. If you would like to use it, send an email describing your server, its purpose, your expected use, and the approximate number of members." data-ja="Jurina's Botは、承認されたDiscordサーバーでのみ利用できます。利用を希望する場合は、サーバー名、目的、利用予定の機能、おおよそのメンバー数を記載してメールで申請してください。">
+            Jurina's Bot is intended only for approved Discord servers. If you would like to use it, send an email describing your server, its purpose, your expected use, and the approximate number of members.
+          </p>
+          <p data-en="Approval is discretionary and may be withdrawn if the bot is abused, automated, used for bulk collection, or operated contrary to Discord or data-provider policies." data-ja="承認は管理者の判断により行われます。スパム、自動化、大量収集、Discordまたは各データ提供元の規約に反する利用が確認された場合、利用許可を取り消すことがあります。">
+            Approval is discretionary and may be withdrawn if the bot is abused, automated, used for bulk collection, or operated contrary to Discord or data-provider policies.
+          </p>
+          <a class="contact-link" href="mailto:lpx2261982328@outlook.com?subject=Jurina%27s%20Bot%20Access%20Request">
+            <span data-en="Request access by email" data-ja="メールで利用を申請">Request access by email</span>
+            <strong>lpx2261982328@outlook.com</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bot-section shell policy-section" id="policy">
+      <div class="bot-section-heading reveal">
+        <p class="eyebrow" data-en="RESPONSIBLE USE" data-ja="適切な利用について">RESPONSIBLE USE</p>
+        <h2 data-en="Use the data with care." data-ja="情報を正しく、慎重に利用してください。">Use the data with care.</h2>
+      </div>
+      <div class="policy-grid">
+        <article class="policy-card reveal">
+          <h3 data-en="No scraping or abuse" data-ja="スクレイピング・不正利用の禁止">No scraping or abuse</h3>
+          <p data-en="Do not spam commands, automate lookups, enumerate CIDs, build permanent archives, or use returned information to harass, track, or impersonate anyone." data-ja="コマンドの連投、自動検索、CIDの総当たり、恒久的なデータ保存、取得情報を用いた嫌がらせ・追跡・なりすましは禁止です。">
+            Do not spam commands, automate lookups, enumerate CIDs, build permanent archives, or use returned information to harass, track, or impersonate anyone.
+          </p>
+        </article>
+        <article class="policy-card reveal">
+          <h3 data-en="Respect provider policies" data-ja="提供元の規約を尊重">Respect provider policies</h3>
+          <p data-en="Use of the bot must comply with Discord rules and the applicable policies of VATSIM, VATUSA, aviationweather.gov, atis.info, and other identified data providers." data-ja="Botの利用には、Discordの規約、およびVATSIM、VATUSA、aviationweather.gov、atis.infoなど表示されたデータ提供元の規約が適用されます。">
+            Use of the bot must comply with Discord rules and the applicable policies of VATSIM, VATUSA, aviationweather.gov, atis.info, and other identified data providers.
+          </p>
+        </article>
+        <article class="policy-card reveal">
+          <h3 data-en="Simulation only" data-ja="シミュレーション専用">Simulation only</h3>
+          <p data-en="All aviation, weather, ATIS, runway, schedule, and transfer information is provided only for flight simulation and community reference." data-ja="航空、気象、ATIS、滑走路、時間帯、移管情報は、フライトシミュレーションおよびコミュニティでの参考用途に限り提供されます。">
+            All aviation, weather, ATIS, runway, schedule, and transfer information is provided only for flight simulation and community reference.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="bot-section shell disclaimer-section" id="contact">
+      <div class="disclaimer-card reveal">
+        <div>
+          <p class="eyebrow" data-en="CONTACT & DISCLAIMER" data-ja="お問い合わせ・免責事項">CONTACT &amp; DISCLAIMER</p>
+          <h2 data-en="Independent, private, and unofficial." data-ja="独立した、非公式のプライベートBotです。">Independent, private, and unofficial.</h2>
+        </div>
+        <div class="legal-copy">
+          <p data-en="Jurina's Bot is an independent community project and is not affiliated with, sponsored by, approved by, or endorsed by Discord, VATSIM, VATUSA, the FAA, atis.info, aviationweather.gov, or any other referenced organization." data-ja="Jurina's Botは独立したコミュニティプロジェクトであり、Discord、VATSIM、VATUSA、FAA、atis.info、aviationweather.gov、その他の関連組織との提携、後援、承認、推奨関係はありません。">
+            Jurina's Bot is an independent community project and is not affiliated with, sponsored by, approved by, or endorsed by Discord, VATSIM, VATUSA, the FAA, atis.info, aviationweather.gov, or any other referenced organization.
+          </p>
+          <p data-en="Data may be delayed, incomplete, inaccurate, changed, or unavailable. No warranty is provided. Never use this bot for real-world navigation, flight planning, air traffic control, operational decision-making, or safety-critical purposes." data-ja="データは遅延、不完全、不正確、変更、または利用不能となる場合があります。正確性や可用性は保証されません。実際の航法、飛行計画、航空管制、運航判断、安全に関わる用途には絶対に使用しないでください。">
+            Data may be delayed, incomplete, inaccurate, changed, or unavailable. No warranty is provided. Never use this bot for real-world navigation, flight planning, air traffic control, operational decision-making, or safety-critical purposes.
+          </p>
+          <p>
+            <span data-en="For access requests, privacy concerns, corrections, or other questions, contact" data-ja="利用申請、プライバシー、情報修正、その他のお問い合わせは、次のメールアドレスまでご連絡ください：">For access requests, privacy concerns, corrections, or other questions, contact</span>
+            <a href="mailto:lpx2261982328@outlook.com">lpx2261982328@outlook.com</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-bottom bot-footer">
+      <p>&copy; <span id="copyright-year">2026</span> Jurina. <span data-en="All rights reserved." data-ja="無断転載を禁じます。">All rights reserved.</span></p>
+      <p data-en="Jurina's Bot — for approved Discord communities." data-ja="Jurina's Bot — 承認されたDiscordコミュニティのために。">Jurina's Bot — for approved Discord communities.</p>
+    </div>
+  </footer>
+</body>
+</html>
