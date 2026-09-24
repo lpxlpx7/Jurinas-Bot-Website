@@ -1,6 +1,6 @@
 # Jurina's Bot Website
 
-An English and Japanese introduction website for Jurina's Bot, with a dedicated Simplified Chinese page.
+A bilingual English and Japanese introduction website for Jurina's Bot.
 
 **Live website:** https://bot.lpxlpx7.top/
 
@@ -8,7 +8,6 @@ An English and Japanese introduction website for Jurina's Bot, with a dedicated 
 
 - Responsive static design
 - English and Japanese language switcher
-- Dedicated Simplified Chinese page at `/cn/`
 - Bot commands and usage information
 - Access request, contact, and disclaimer sections
 
