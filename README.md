@@ -19,7 +19,7 @@ The website is deployed from the repository's `main` branch with GitHub Pages.
 
 ## Contact
 
-For access requests or questions, email `lpx2261982328@outlook.com`.
+For access requests or questions, email `dev@lpxlpx7.top`.
 
 ## License
 
