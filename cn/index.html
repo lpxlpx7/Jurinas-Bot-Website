@@ -2,9 +2,9 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="Jurina's Bot 是一个面向飞行模拟社区的私有 Discord 工具，提供 VATSIM 成员资料、航空天气、Digital ATIS 和日本运行参考信息。">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#f5f5f7">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Jurina's Bot | 中文介绍">
@@ -21,8 +21,9 @@
   <link rel="icon" href="../img/1.png" type="image/png">
   <link rel="apple-touch-icon" href="../img/1.png">
   <link rel="manifest" href="../site.webmanifest">
-  <link rel="stylesheet" href="../css/style.css">
-  <script src="../js/main.js" defer></script>
+  <script src="../js/theme-init.js?v=20261029"></script>
+  <link rel="stylesheet" href="../css/style.css?v=20261029">
+  <script src="../js/main.js?v=20261029" defer></script>
 </head>
 <body class="bot-page">
   <header class="site-header">
@@ -38,9 +39,22 @@
           <a href="#access">使用申请</a>
           <a href="#contact">联系</a>
         </div>
+        <button class="theme-button" type="button" aria-label="切换颜色主题"><span class="icon icon-moon" aria-hidden="true"></span><span class="icon icon-sun" aria-hidden="true"></span></button>
+        <button class="menu-button" type="button" aria-label="打开菜单" aria-expanded="false"><span></span><span></span></button>
       </div>
     </nav>
   </header>
+  <div class="menu-scrim" hidden></div>
+  <aside class="mobile-menu" aria-hidden="true" inert>
+    <div class="mobile-menu-head"><span>菜单</span><button class="menu-close" type="button" aria-label="关闭菜单"><span class="icon icon-close" aria-hidden="true"></span></button></div>
+    <nav class="mobile-nav" aria-label="移动端导航">
+      <a href="#features"><span>功能</span><span>01</span></a>
+      <a href="#commands"><span>命令</span><span>02</span></a>
+      <a href="#access"><span>使用申请</span><span>03</span></a>
+      <a href="#contact"><span>联系</span><span>04</span></a>
+    </nav>
+    <p class="mobile-menu-note">面向飞行模拟社区的私有 Discord 工具。</p>
+  </aside>
 
   <main id="top">
     <section class="bot-hero shell">
@@ -53,7 +67,7 @@
         <p class="hero-lead">Jurina's Bot 将实用的 VATSIM 成员信息、航空天气、Digital ATIS 和日本运行参考资料整合到简洁的 Discord 命令界面中。</p>
         <div class="actions">
           <a class="button button-primary" href="#commands">查看命令</a>
-          <a class="button button-secondary" href="#access">申请使用</a>
+          <a class="button button-secondary" href="#access">申请使用 <span class="icon icon-chevron" aria-hidden="true"></span></a>
         </div>
         <p class="availability-note">
           <span class="status-dot" aria-hidden="true"></span>
@@ -184,7 +198,7 @@
         <div class="legal-copy">
           <p>Jurina's Bot 是独立社区项目，与 Discord、VATSIM、VATUSA、FAA、atis.info、aviationweather.gov 或任何其他提及的组织不存在隶属、赞助、批准或背书关系。</p>
           <p>数据可能延迟、不完整、不准确、发生变化或无法使用，且不提供任何保证。严禁将本 Bot 用于真实世界的导航、飞行计划、空中交通管制、运行决策或任何安全关键用途。</p>
-           <p>如需申请使用、反馈隐私问题、更正信息或咨询其他事项，请联系 <a href="mailto:dev@jurina.org">dev@jurina.org</a>。</p>
+          <p>如需申请使用、反馈隐私问题、更正信息或咨询其他事项，请联系 <a href="mailto:dev@jurina.org">dev@jurina.org</a>。</p>
         </div>
       </div>
     </section>
