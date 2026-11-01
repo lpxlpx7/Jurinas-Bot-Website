@@ -1,0 +1,168 @@
+import type { Text } from "../lib/locale.ts";
+
+// Every visible string on the page, in English, Japanese and Chinese.
+
+export const copy = {
+  pageTitle: { en: "Jurina's Bot", ja: "Jurina's Bot | 公式紹介", zh: "Jurina's Bot | 中文介绍" },
+  home: { en: "Jurina's Bot home", ja: "Jurina's Bot ホーム", zh: "Jurina's Bot 首页" },
+  primaryNav: { en: "Primary navigation", ja: "メインナビゲーション", zh: "主导航" },
+  mobileNav: { en: "Mobile navigation", ja: "モバイルナビゲーション", zh: "移动端导航" },
+  language: { en: "Language", ja: "言語", zh: "语言" },
+  theme: { en: "Switch color theme", ja: "カラーテーマを切り替える", zh: "切换颜色主题" },
+  menuOpen: { en: "Open menu", ja: "メニューを開く", zh: "打开菜单" },
+  menuClose: { en: "Close menu", ja: "メニューを閉じる", zh: "关闭菜单" },
+
+  navTry: { en: "Try it", ja: "試す", zh: "试一试" },
+  navDatis: { en: "D-ATIS", ja: "D-ATIS", zh: "D-ATIS" },
+  navCommands: { en: "Commands", ja: "コマンド", zh: "命令" },
+  navAccess: { en: "Access", ja: "利用申請", zh: "使用申请" },
+
+  newBadge: { en: "New", ja: "New", zh: "新" },
+
+  heroPill: { en: "D-ATIS now covers Japan", ja: "D-ATISが日本に対応", zh: "D-ATIS 现已支持日本" },
+  heroTitle: { en: "Flight-sim answers,", ja: "フライトシムの答えを、", zh: "模拟飞行的答案，" },
+  heroTitleAccent: { en: "one slash away", ja: "スラッシュひとつで", zh: "只差一个斜杠" },
+  heroLead: {
+    en: "VATSIM profiles, METAR and TAF, Digital ATIS for the US and Japan, and live Haneda operations, right inside your Discord server.",
+    ja: "VATSIMプロフィール、METAR・TAF、米国と日本のDigital ATIS、羽田の運用情報を、Discordサーバーの中で。",
+    zh: "VATSIM 资料、METAR 与 TAF、美国与日本的 Digital ATIS，以及羽田实时运行信息，都在你的 Discord 服务器里。",
+  },
+  heroTry: { en: "Try a command", ja: "コマンドを試す", zh: "试试命令" },
+  heroAccess: { en: "Request access", ja: "利用を申請", zh: "申请使用" },
+
+  playgroundLabel: { en: "Command playground", ja: "コマンドを試す", zh: "命令演示" },
+  playgroundTry: { en: "Try", ja: "例", zh: "试试" },
+  channel: { en: "flight-ops", ja: "flight-ops", zh: "flight-ops" },
+  placeholder: { en: "Type / to see commands", ja: "「/」を入力してコマンドを表示", zh: "输入「/」查看命令" },
+  inputLabel: { en: "Type a command", ja: "コマンドを入力", zh: "输入命令" },
+  send: { en: "Send", ja: "送信", zh: "发送" },
+  pickerTitle: { en: "Commands matching", ja: "一致するコマンド", zh: "匹配的命令" },
+  pickerEmpty: { en: "No matching commands", ja: "一致するコマンドはありません", zh: "没有匹配的命令" },
+  pickerKeys: { en: "↑↓ to choose, Tab to complete, Enter to send", ja: "↑↓で選択、Tabで補完、Enterで送信", zh: "↑↓ 选择，Tab 补全，Enter 发送" },
+  required: { en: "required", ja: "必須", zh: "必填" },
+  botTag: { en: "APP", ja: "アプリ", zh: "APP" },
+  today: { en: "Today at {time}", ja: "今日 {time}", zh: "今天 {time}" },
+  you: { en: "you", ja: "あなた", zh: "你" },
+  used: { en: "{user} used {command}", ja: "{user}が{command}を使用しました", zh: "{user} 使用了 {command}" },
+  exampleNote: { en: "Example output, not live data", ja: "表示例です（実際のデータではありません）", zh: "示例输出，并非实时数据" },
+  otherExample: {
+    en: "No saved example for {value}, so here's {example} instead.",
+    ja: "{value} の表示例はないため、{example} の例を表示しています。",
+    zh: "没有 {value} 的示例，以下显示 {example} 的示例。",
+  },
+  unknownCommand: {
+    en: "{command} isn't one of Jurina's Bot's commands. Type / to see the list.",
+    ja: "{command} というコマンドはありません。「/」を入力すると一覧が表示されます。",
+    zh: "Jurina's Bot 没有 {command} 这个命令。输入「/」查看命令列表。",
+  },
+  notCommand: {
+    en: "Commands start with /. Try /datis icao:RJOA.",
+    ja: "コマンドは「/」から始まります。/datis icao:RJOA を試してみてください。",
+    zh: "命令以「/」开头。试试 /datis icao:RJOA。",
+  },
+  onlyYou: { en: "Only you can see this", ja: "あなただけに表示されています", zh: "只有你能看到" },
+  demoNote: {
+    en: "Every reply here is a saved example, not live data. The real bot runs in approved servers only.",
+    ja: "ここでの返信はすべて保存済みの表示例で、実際のデータではありません。実際のBotは承認済みのサーバーでのみ動作します。",
+    zh: "这里的回复都是预先保存的示例，并非实时数据。真正的 Bot 仅在获批的服务器中运行。",
+  },
+  clear: { en: "Clear", ja: "クリア", zh: "清空" },
+
+  coverageEyebrow: { en: "DIGITAL ATIS", ja: "DIGITAL ATIS", zh: "DIGITAL ATIS" },
+  coverageTitle: { en: "Now in two countries", ja: "2つの国に対応", zh: "现已覆盖两个国家" },
+  coverageLead: {
+    en: "One command, the same clean answer, whether you're flying into New York or Hiroshima.",
+    ja: "ニューヨークでも広島でも、同じコマンドで同じように見やすく。",
+    zh: "无论飞往纽约还是广岛，同一条命令，同样清晰的结果。",
+  },
+  usKicker: { en: "UNITED STATES", ja: "アメリカ合衆国", zh: "美国" },
+  usTitle: { en: "FAA Digital ATIS", ja: "FAA Digital ATIS", zh: "FAA Digital ATIS" },
+  usText: { en: "Every airport that publishes FAA D-ATIS.", ja: "FAAがD-ATISを提供している空港に対応。", zh: "支持所有发布 FAA D-ATIS 的机场。" },
+  jpKicker: { en: "JAPAN", ja: "日本", zh: "日本" },
+  jpTitle: { en: "Japanese airports", ja: "日本の空港", zh: "日本机场" },
+  jpText: {
+    en: "Japanese airports that publish Digital ATIS, in the same format pilots hear on frequency.",
+    ja: "Digital ATISを提供する日本の空港に対応。実際の周波数と同じ内容をそのまま表示します。",
+    zh: "支持提供 Digital ATIS 的日本机场，内容与频率上播报的一致。",
+  },
+
+  commandsEyebrow: { en: "COMMANDS", ja: "コマンド", zh: "命令" },
+  commandsTitle: { en: "{count} commands, nothing extra", ja: "{count}のコマンド、必要なものだけ", zh: "{count} 条命令，恰到好处" },
+  commandsLead: {
+    en: "Type / in an approved server, pick a command and fill in the options. Tap any row to try it above.",
+    ja: "承認済みのサーバーで「/」を入力し、コマンドを選んで項目を入力するだけ。行をタップすると上で試せます。",
+    zh: "在获批的服务器中输入「/」，选择命令并填写选项即可。点击任意一行，可在上方试用。",
+  },
+  filterAll: { en: "All", ja: "すべて", zh: "全部" },
+  filterLabel: { en: "Filter commands", ja: "コマンドを絞り込む", zh: "筛选命令" },
+
+  accessEyebrow: { en: "ACCESS", ja: "利用申請", zh: "使用申请" },
+  accessTitle: { en: "Invite only, by email", ja: "メールによる承認制", zh: "邀请制，邮件申请" },
+  steps: [
+    {
+      title: { en: "Write in", ja: "メールを送る", zh: "发送邮件" },
+      text: {
+        en: "Tell us the server name, what it's for, how you'd use the bot and roughly how many members it has.",
+        ja: "サーバー名、目的、Botの使い方、おおよそのメンバー数をお知らせください。",
+        zh: "说明服务器名称、用途、打算如何使用 Bot 以及大致成员数。",
+      },
+    },
+    {
+      title: { en: "We review", ja: "審査", zh: "审核" },
+      text: {
+        en: "Approval is at the operator's discretion and can be withdrawn if the ground rules are broken.",
+        ja: "承認は運営者の判断で行い、利用ルールに反した場合は取り消すことがあります。",
+        zh: "是否批准由运营者决定；如违反使用规范，许可可能被撤销。",
+      },
+    },
+    {
+      title: { en: "Start typing", ja: "使い始める", zh: "开始使用" },
+      text: {
+        en: "Once the bot joins your server, every command is a slash away.",
+        ja: "Botがサーバーに参加したら、すべてのコマンドが使えます。",
+        zh: "Bot 加入服务器后，所有命令输入斜杠即可使用。",
+      },
+    },
+  ],
+  mailLabel: { en: "Request access", ja: "利用を申請する", zh: "申请使用" },
+
+  rulesEyebrow: { en: "GROUND RULES", ja: "利用ルール", zh: "使用规范" },
+  rulesTitle: { en: "Fly it like a sim", ja: "シミュレーションのために", zh: "仅为模拟飞行" },
+  rules: [
+    {
+      title: { en: "No scraping or abuse", ja: "スクレイピング・悪用の禁止", zh: "禁止抓取与滥用" },
+      text: {
+        en: "Don't spam commands, automate lookups, enumerate CIDs or build archives, and never use results to harass, track or impersonate anyone.",
+        ja: "コマンドの連投、自動検索、CIDの総当たり、データの蓄積は禁止です。取得した情報を嫌がらせ、追跡、なりすましに使うことも認められません。",
+        zh: "请勿刷屏、自动查询、遍历 CID 或建立数据存档，也不得利用查询结果骚扰、追踪或冒充他人。",
+      },
+    },
+    {
+      title: { en: "Respect provider rules", ja: "提供元の規約を守る", zh: "遵守提供方规则" },
+      text: {
+        en: "Follow Discord's rules and the policies of VATSIM, VATUSA, aviationweather.gov, atis.info and every other data source the bot cites.",
+        ja: "Discordの規約に加え、VATSIM、VATUSA、aviationweather.gov、atis.infoなど、Botが表示する各データ提供元の規約に従ってください。",
+        zh: "请遵守 Discord 规则，以及 VATSIM、VATUSA、aviationweather.gov、atis.info 等所有数据来源的政策。",
+      },
+    },
+    {
+      title: { en: "Simulation only", ja: "シミュレーション専用", zh: "仅限模拟用途" },
+      text: {
+        en: "Data can be late, incomplete or wrong, and comes with no warranty. Never use it for real-world navigation, flight planning, air traffic control or any safety-critical decision.",
+        ja: "データは遅延、欠落、誤りを含む場合があり、保証はありません。実際の航法、飛行計画、航空管制、安全に関わる判断には絶対に使用しないでください。",
+        zh: "数据可能延迟、不完整或有误，且不作任何保证。切勿用于真实世界的导航、飞行计划、空中交通管制或任何涉及安全的决策。",
+      },
+    },
+  ],
+  finePrint: {
+    en: "Jurina's Bot is an independent community project. It is not affiliated with or endorsed by Discord, VATSIM, VATUSA, the FAA, aviationweather.gov, atis.info or any other organization mentioned here. Questions, corrections or privacy requests:",
+    ja: "Jurina's Botは独立したコミュニティプロジェクトであり、Discord、VATSIM、VATUSA、FAA、aviationweather.gov、atis.infoをはじめ、ここに記載のいかなる組織とも提携・承認関係はありません。お問い合わせ、情報の修正、プライバシーに関するご相談：",
+    zh: "Jurina's Bot 是独立的社区项目，与 Discord、VATSIM、VATUSA、FAA、aviationweather.gov、atis.info 及文中提及的任何组织均无隶属或背书关系。咨询、更正信息或隐私问题，请联系",
+  },
+
+  rights: { en: "All rights reserved.", ja: "無断転載を禁じます。", zh: "保留所有权利。" },
+  openSource: { en: "Open source on {link}", ja: "ソースコードは{link}で公開中", zh: "本网站已在 {link} 上开源" },
+} satisfies Record<string, Text | Array<Record<string, Text>>>;
+
+export const email = "dev@jurina.org";
+export const repoUrl = "https://github.com/lpxlpx7/Jurinas-Bot-Website";

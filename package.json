@@ -3,10 +3,17 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc --watch"
+    "build": "node src/build/build.ts",
+    "dev": "node --watch-path=src src/build/build.ts",
+    "check": "tsc"
   },
   "devDependencies": {
+    "@types/node": "^26.6.6",
+    "esbuild": "^0.28.2",
+    "linkedom": "^0.18.14",
     "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=24"
   }
 }
